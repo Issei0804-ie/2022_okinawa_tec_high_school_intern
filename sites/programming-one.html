@@ -437,7 +437,7 @@ title="Print to PDF"
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#int-str-float">
-   2.5. 代表的な型(int, str, float)を区別できる。
+   2.5. 標準的な型(int, str, float)を区別できる。
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -446,18 +446,23 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#intprint">
-   2.7. int型の変数の中身をprint文を使用して出力することができる。
+  <a class="reference internal nav-link" href="#id4">
+   2.7. 変数について理解する。
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id4">
-   2.8. 変数と条件について理解する。
+  <a class="reference internal nav-link" href="#strprint">
+   2.8. str型の変数の中身をprint文を使用して出力することができる。
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id5">
-   2.9. ループと関数について理解する。
+   2.9. 条件について理解する。
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   2.10. ループと関数について理解する。
   </a>
  </li>
 </ul>
@@ -501,7 +506,7 @@ title="Print to PDF"
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#int-str-float">
-   2.5. 代表的な型(int, str, float)を区別できる。
+   2.5. 標準的な型(int, str, float)を区別できる。
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -510,18 +515,23 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#intprint">
-   2.7. int型の変数の中身をprint文を使用して出力することができる。
+  <a class="reference internal nav-link" href="#id4">
+   2.7. 変数について理解する。
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id4">
-   2.8. 変数と条件について理解する。
+  <a class="reference internal nav-link" href="#strprint">
+   2.8. str型の変数の中身をprint文を使用して出力することができる。
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id5">
-   2.9. ループと関数について理解する。
+   2.9. 条件について理解する。
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   2.10. ループと関数について理解する。
   </a>
  </li>
 </ul>
@@ -542,10 +552,11 @@ title="Print to PDF"
 <li><p>プログラミングのステップが3つあることを理解する。</p></li>
 <li><p>GoogleColabを使用して資料に掲載されているサンプルコードを実行する。</p></li>
 <li><p>print文を使って任意の文を出力させることができる。</p></li>
-<li><p>代表的な型(int, str, float)を区別できる。</p></li>
+<li><p>標準的な型(int, str, float)を区別できる。</p></li>
 <li><p>type() を使って型を確認できる。</p></li>
-<li><p>int型の変数の中身をprint文を使用して出力することができる。</p></li>
-<li><p>変数と条件について理解する。</p></li>
+<li><p>変数について理解する。</p></li>
+<li><p>str型の変数の中身をprint文を使用して出力することができる。</p></li>
+<li><p>条件について理解する。</p></li>
 <li><p>ループと関数について理解する。</p></li>
 </ul>
 <p>–</p>
@@ -600,7 +611,9 @@ title="Print to PDF"
 <p>Pythonを実行する方法は色々とあるが、今回はGoogleColabを使用してコードを実行する。
 GoogleColabについて簡単に説明すると、ブラウザ上でPythonを実行、記述できるサービスである。
 もう少し詳細な情報を知りたい方は<a class="reference external" href="https://research.google.com/colaboratory/faq.html?hl=ja">リンク先</a>を参考にしてほしい。</p>
-<p>下記のprint文をColabで実行してみよう。まず、このページ右上のロケットマークをクリックする。</p>
+<p>下記のprint文をColabで実行してみよう。まず、このページ右上のロケットマークにカーソルを合わせ、Colabをクリックする。
+するとポップアップが色々出てくるので文を読んで処理し、Colabのサイトに飛ぼう。
+Colabのサイトに飛ぶと、書かれているPythonコードを実行するボタンがあるのでそれを押し、結果を確認する。</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hallo!&quot;</span><span class="p">)</span>
@@ -616,21 +629,137 @@ GoogleColabについて簡単に説明すると、ブラウザ上でPythonを実
 </section>
 <section id="print">
 <h2><span class="section-number">2.4. </span>print文を使って任意の文を出力させることができる。<a class="headerlink" href="#print" title="Permalink to this headline">#</a></h2>
+<p>さて、ここまで読んだことでPythonが実行できる環境を整えたことになる。
+では、実際にPythonを書いてみよう。
+まずは”Hello,World”という文字を出力してみよう。出力はprint関数を用いることで行うことができる。</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># ここにprint文を書いてみる。</span>
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="int-str-float">
-<h2><span class="section-number">2.5. </span>代表的な型(int, str, float)を区別できる。<a class="headerlink" href="#int-str-float" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">2.5. </span>標準的な型(int, str, float)を区別できる。<a class="headerlink" href="#int-str-float" title="Permalink to this headline">#</a></h2>
+<p>Pythonで扱う具体的な値は全て型を持っている。
+ここでは最低限覚えたいPythonが提供する型(type)について説明する。</p>
+<p>まずはint型について説明する。
+int型は整数が所持している型である。
+以下の値は全てint型である。</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span>
+<span class="mi">3</span><span class="o">-</span><span class="mi">1</span>
+<span class="mi">100</span><span class="o">+</span><span class="mi">400</span>
+<span class="mi">100</span><span class="o">*</span><span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>200
+</pre></div>
+</div>
+</div>
+</div>
+<p>次にfloat型について説明する。
+float型は少数が所持している型である。
+以下の値は全てfloat型である。</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mf">0.1</span>
+<span class="mf">0.00001</span>
+<span class="mf">0.1</span><span class="o">*</span><span class="mf">0.1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.010000000000000002
+</pre></div>
+</div>
+</div>
+</div>
+<p>次にstr型について説明する。
+str型は文字列または文字が所持している型である。
+以下の値は全てstr型である。</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;hoge&quot;</span>
+<span class="s2">&quot;sample&quot;</span>
+<span class="s2">&quot;A&quot;</span>
+<span class="s1">&#39;A&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;A&#39;
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="type">
 <h2><span class="section-number">2.6. </span>type() を使って型を確認できる。<a class="headerlink" href="#type" title="Permalink to this headline">#</a></h2>
-</section>
-<section id="intprint">
-<h2><span class="section-number">2.7. </span>int型の変数の中身をprint文を使用して出力することができる。<a class="headerlink" href="#intprint" title="Permalink to this headline">#</a></h2>
+<p>ここまで標準的な型について説明してきたが、type関数を使用することで型を判別することができる。
+実際に手を動かして確認してみよう。</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># int型の確認</span>
+<span class="nb">type</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># float型の確認</span>
+<span class="nb">type</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
+
+<span class="c1"># str型の確認</span>
+<span class="nb">type</span><span class="p">(</span><span class="s2">&quot;hoge&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>str
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="id4">
-<h2><span class="section-number">2.8. </span>変数と条件について理解する。<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">2.7. </span>変数について理解する。<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="strprint">
+<h2><span class="section-number">2.8. </span>str型の変数の中身をprint文を使用して出力することができる。<a class="headerlink" href="#strprint" title="Permalink to this headline">#</a></h2>
+<p>次にprint文を使用して変数の中身を表示してみる。
+まず変数について説明する。
+一般的に変数とは値を格納できる箱であると説明されることが多いがわかりやすさを考慮し、変数が持つ機能について先に説明する。
+変数は何らかの値を保持することができる。そして変数には名前を付けることができる。
+例えば、”Pythonはプログラミング言語です”というstr型を持つ値に対してsentenceという名前を付けてみる。</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sentence</span> <span class="o">=</span> <span class="s2">&quot;Pythonはプログラミング言語です&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>さらにこれをprint文を使って出力してみる。</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Pythonはプログラミング言語です
+</pre></div>
+</div>
+</div>
+</div>
+<p>これでstr型の変数の中身をprint文を使用して出力することができた。</p>
 </section>
 <section id="id5">
-<h2><span class="section-number">2.9. </span>ループと関数について理解する。<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">2.9. </span>条件について理解する。<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h2>
+<p>プログラミングを行う上でif文とfor文は外せない話である。まずif文について説明する。</p>
+</section>
+<section id="id6">
+<h2><span class="section-number">2.10. </span>ループと関数について理解する。<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h2>
 </section>
 </section>
 
