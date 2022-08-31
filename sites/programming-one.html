@@ -207,6 +207,71 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/Issei0804-ie/2022_okinawa_tec_high_school_intern/main?urlpath=tree/sites/programming-one.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://colab.research.google.com/github/Issei0804-ie/2022_okinawa_tec_high_school_intern/blob/main/sites/programming-one.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Colab"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_colab.png">
+  </span>
+<span class="headerbtn__text-container">Colab</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="initThebeSBT()"
+  class="headerbtn headerbtn-launch-thebe"
+  data-toggle="tooltip"
+data-placement="left"
+title="Launch Thebe"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="headerbtn__text-container">Live Code</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -229,7 +294,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book"
+        <a href="https://github.com/Issei0804-ie/2022_okinawa_tec_high_school_intern"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -246,7 +311,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fsites/programming-one.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/Issei0804-ie/2022_okinawa_tec_high_school_intern/issues/new?title=Issue%20on%20page%20%2Fsites/programming-one.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -273,6 +338,23 @@ title="Open an issue"
   </button>
   <div class="menu-dropdown__content">
     <ul>
+      <li>
+        <a href="../_sources/sites/programming-one.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download notebook file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
       <li>
         <a href="../_sources/sites/programming-one.md"
    class="headerbtn"
@@ -311,12 +393,76 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   2.1. この時間の目標
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   2.2. プログラミングの3ステップ
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#googlecolab">
+   2.3. GoogleColabを使用して資料に掲載されているサンプルコードを実行する。
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#print">
+   2.4. print文を使って任意の文を出力させることができる。
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#int-str-float">
+   2.5. 代表的な型(int, str, float)を区別できる。
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#type">
+   2.6. type() を使って型を確認できる。
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#intprint">
+   2.7. int型の変数の中身をprint文を使用して出力することができる。
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   2.8. 変数と条件について理解する。
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   2.9. ループと関数について理解する。
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -328,6 +474,59 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   2.1. この時間の目標
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   2.2. プログラミングの3ステップ
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#googlecolab">
+   2.3. GoogleColabを使用して資料に掲載されているサンプルコードを実行する。
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#print">
+   2.4. print文を使って任意の文を出力させることができる。
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#int-str-float">
+   2.5. 代表的な型(int, str, float)を区別できる。
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#type">
+   2.6. type() を使って型を確認できる。
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#intprint">
+   2.7. int型の変数の中身をprint文を使用して出力することができる。
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   2.8. 変数と条件について理解する。
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   2.9. ループと関数について理解する。
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -337,14 +536,110 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1><span class="section-number">2. </span>プログラミング総合演習1<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
+<section id="id2">
+<h2><span class="section-number">2.1. </span>この時間の目標<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>プログラミングのステップが3つあることを理解する。</p></li>
+<li><p>GoogleColabを使用して資料に掲載されているサンプルコードを実行する。</p></li>
+<li><p>print文を使って任意の文を出力させることができる。</p></li>
+<li><p>代表的な型(int, str, float)を区別できる。</p></li>
+<li><p>type() を使って型を確認できる。</p></li>
+<li><p>int型の変数の中身をprint文を使用して出力することができる。</p></li>
+<li><p>変数と条件について理解する。</p></li>
+<li><p>ループと関数について理解する。</p></li>
+</ul>
+<p>–</p>
+</section>
+<section id="id3">
+<h2><span class="section-number">2.2. </span>プログラミングの3ステップ<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
+<p>我々がプログラミングを行う際考えなければならないステップが3つある。
+以下のステップに従うことで、複雑な問題であったとしてもプログラムすることができる。</p>
+<ol class="simple">
+<li><p>実現したいことに対する理解</p></li>
+<li><p>理解したことを手順として説明する</p></li>
+<li><p>プログラムへ翻訳する</p></li>
+</ol>
+<p>例題を2つ見ていこう。あなたが「三角形の面積を求める」ということをプログラミングで実現したいとする。
+その場合、プログラミングの3ステップは以下の通りとなる。</p>
+<ol class="simple">
+<li><p>実現したいことに対する理解</p>
+<ul class="simple">
+<li><p><strong>三角形の面積を求める</strong>と理解する</p></li>
+</ul>
+</li>
+<li><p>理解したことを手順として説明する</p>
+<ul class="simple">
+<li><p>三角形の面積を求めるためには…</p>
+<ul>
+<li><p>手順1. 求めたい三角形の底辺と高さを知る必要がある</p></li>
+<li><p>手順2. 底辺と高さを用いて三角形の面積を計算する</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>プログラムへ翻訳する</p>
+<ul class="simple">
+<li><p>例として以下のコードを思いつく。</p></li>
+</ul>
+</li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">width</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">height</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">area</span> <span class="o">=</span> <span class="n">width</span> <span class="o">*</span> <span class="n">height</span> <span class="o">/</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>もう少し発展的な例を見ていく。</p>
+<p>(hogehoge)</p>
+</section>
+<section id="googlecolab">
+<h2><span class="section-number">2.3. </span>GoogleColabを使用して資料に掲載されているサンプルコードを実行する。<a class="headerlink" href="#googlecolab" title="Permalink to this headline">#</a></h2>
+<p>Pythonを実行する方法は色々とあるが、今回はGoogleColabを使用してコードを実行する。
+GoogleColabについて簡単に説明すると、ブラウザ上でPythonを実行、記述できるサービスである。
+もう少し詳細な情報を知りたい方は<a class="reference external" href="https://research.google.com/colaboratory/faq.html?hl=ja">リンク先</a>を参考にしてほしい。</p>
+<p>下記のprint文をColabで実行してみよう。まず、このページ右上のロケットマークをクリックする。</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hallo!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hallo!
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="print">
+<h2><span class="section-number">2.4. </span>print文を使って任意の文を出力させることができる。<a class="headerlink" href="#print" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="int-str-float">
+<h2><span class="section-number">2.5. </span>代表的な型(int, str, float)を区別できる。<a class="headerlink" href="#int-str-float" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="type">
+<h2><span class="section-number">2.6. </span>type() を使って型を確認できる。<a class="headerlink" href="#type" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="intprint">
+<h2><span class="section-number">2.7. </span>int型の変数の中身をprint文を使用して出力することができる。<a class="headerlink" href="#intprint" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="id4">
+<h2><span class="section-number">2.8. </span>変数と条件について理解する。<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="id5">
+<h2><span class="section-number">2.9. </span>ループと関数について理解する。<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h2>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
+            repo: "Issei0804-ie/2022_okinawa_tec_high_school_intern",
+            ref: "main",
         },
         codeMirrorConfig: {
             theme: "abcdef",
