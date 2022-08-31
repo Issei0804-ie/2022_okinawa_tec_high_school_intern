@@ -1,0 +1,19 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: sites/root.md
+parts:
+    - caption: 1日目
+      numbered: true
+      chapters:
+      - file: sites/intro.md
+      - file: sites/programming-one.md
+      - file: sites/programming-two.md
+    - caption: 2日目
+      numbered: true
+      chapters:
+      - file: sites/programming-review.md
+      - file: sites/class-design.md
+      - file: sites/object-oriented.md
+      - file: sites/web-application.md
