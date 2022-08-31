@@ -9,6 +9,7 @@ logo: logo.png
 # See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: force
+  stderr_output: show
 
 # Define the name of the latex output file for PDF builds
 latex:
@@ -19,11 +20,15 @@ latex:
 bibtex_bibfiles:
   - references.bib
 
-# Information about where the book exists on the web
+launch_buttons:
+    notebook_interface: "classic"
+    colab_url: "https://colab.research.google.com"
+    binderhub_url: "https://mybinder.org"
+    thebe: true
+
 repository:
-  url: https://github.com/executablebooks/jupyter-book  # Online location of your book
-  path_to_book: docs  # Optional path to your book, relative to the repository root
-  branch: master  # Which branch of the repository should be used when creating links (optional)
+  url: https://github.com/Issei0804-ie/2022_okinawa_tec_high_school_intern
+  branch: main
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
