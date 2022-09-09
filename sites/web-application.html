@@ -310,12 +310,56 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   7.1. この時間の目標
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   7.2. Webアプリケーションの例題
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   7.3. Webアプリケーションとは
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   7.4. Webアプリケーションでよく使われているプロトコルについて知る
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#html">
+   7.5. HTML について知る
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -327,6 +371,39 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   7.1. この時間の目標
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   7.2. Webアプリケーションの例題
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   7.3. Webアプリケーションとは
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   7.4. Webアプリケーションでよく使われているプロトコルについて知る
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#html">
+   7.5. HTML について知る
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -336,6 +413,82 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="web">
 <h1><span class="section-number">7. </span>Webアプリケーションとは<a class="headerlink" href="#web" title="Permalink to this headline">#</a></h1>
+<section id="id1">
+<h2><span class="section-number">7.1. </span>この時間の目標<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Webアプリケーションでよく使われているプロトコルについて知る</p></li>
+<li><p>HTTPについて知る</p></li>
+<li><p>HTMLについて知る</p></li>
+<li><p>CSSについて知る</p></li>
+<li><p>JavaScriptについて知る</p></li>
+<li><p>Databaseについて知る</p></li>
+<li><p>PythonでWebアプリケーションを書いてみる</p></li>
+</ul>
+</section>
+<section id="id2">
+<h2><span class="section-number">7.2. </span>Webアプリケーションの例題<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
+<p>いきなり複雑な説明をされても理解が難しいため、いくつかWebアプリケーションを紹介する。</p>
+<ul class="simple">
+<li><p>Line</p></li>
+<li><p>Facebook</p></li>
+<li><p>その他SNS</p></li>
+<li><p>ネットショッピングサイト</p>
+<ul>
+<li><p>Amazon</p></li>
+</ul>
+</li>
+<li><p>スマホゲーム</p>
+<ul>
+<li><p>プロセカ</p></li>
+<li><p>遊戯王</p></li>
+</ul>
+</li>
+<li><p>Netflix</p></li>
+<li><p>etc…</p></li>
+</ul>
+<p>上記で紹介したサービス以外にもWebアプリケーションは無数に存在する。
+では、そもそもWebアプリケーションとは何を指すのだろうか。</p>
+</section>
+<section id="id3">
+<h2><span class="section-number">7.3. </span>Webアプリケーションとは<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
+<p>もともとWebアプリケーションとはWebブラウザを介してユーザーが入力を行い、用意したサーバーで処理しユーザーに結果を返すサービス、機能のことである。</p>
+<p><a class="reference external" href="http://ext-web.edu.sgu.ac.jp/HIKO/Seminar/14thStudent/Sotsuron/Paper_Takamori.pdf">http://ext-web.edu.sgu.ac.jp/HIKO/Seminar/14thStudent/Sotsuron/Paper_Takamori.pdf</a>
+<a class="reference external" href="https://www.wakhok.ac.jp/~tomoharu/web2004/text/index_c1.html#doc1_id59">https://www.wakhok.ac.jp/~tomoharu/web2004/text/index_c1.html#doc1_id59</a></p>
+<p>しかしながら、例えば Line はスマホアプリケーション上で行うツールであり、Webブラウザを介していると認識したことはないはずだ。
+このように、近年Webアプリケーションの定義が少し変わってきて、現在だと <strong>HTTP</strong> と呼ばれるプロトコルを用いて通信しているアプリケーション = Webアプリケーションという認識を行うことが多い。
+ちなみに、プロトコルとはコンピュータが通信を行うためのルールである。</p>
+<p>つまり、Webブラウザを使わずとも、HTTPを使用していればWebアプリケーションであると言える。</p>
+</section>
+<section id="id4">
+<h2><span class="section-number">7.4. </span>Webアプリケーションでよく使われているプロトコルについて知る<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h2>
+<p>Webアプリケーションでは様々なプロトコルが使用される。ここではよくWebアプリケーションで使用されるプロトコルについて紹介する。</p>
+<ul class="simple">
+<li><p>HTTP</p>
+<ul>
+<li><p>Hyper-Text-Transfer-Protocol の略</p></li>
+<li><p>一般的に、WebブラウザとHTTPサーバーとの間のやりとりで使われる</p></li>
+<li><p>どのようにコネクションを確立するか規約されている</p></li>
+</ul>
+</li>
+<li><p>TLS/SSL</p>
+<ul>
+<li><p>暗号化通信を行う仕組み</p></li>
+<li><p>他のプロトコルを暗号化する際に使用される</p></li>
+</ul>
+</li>
+<li><p>各種データベースプロトコル</p>
+<ul>
+<li><p>基本的にデータベースごとに異なる</p></li>
+<li><p>例えば MySQL の場合だと<a class="reference external" href="https://dev.mysql.com/doc/dev/mysql-server/latest/PAGE_PROTOCOL.html">こんな感じ</a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="html">
+<h2><span class="section-number">7.5. </span>HTML について知る<a class="headerlink" href="#html" title="Permalink to this headline">#</a></h2>
+<p>HTMLとはWebページを記述するためのデータ形式である。
+ここでは実際にHTMLを書いていくことによって理解していくこととする。</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
