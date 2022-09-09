@@ -70,7 +70,7 @@ GoogleColabについて簡単に説明すると、ブラウザ上でPythonを実
 Colabのサイトに飛ぶと、書かれているPythonコードを実行するボタンがあるのでそれを押し、結果を確認する。
 
 ```{code-cell}
-print("Hallo!")
+print("Hello!")
 ```
 
 ## print文を使って任意の文を出力させることができる。
