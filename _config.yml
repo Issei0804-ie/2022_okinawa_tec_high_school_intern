@@ -10,6 +10,7 @@ logo: logo.png
 execute:
   execute_notebooks: force
   stderr_output: show
+  allow_errors: True
 
 # Define the name of the latex output file for PDF builds
 latex:
