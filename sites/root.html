@@ -310,12 +310,43 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   目標
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   前提条件
+  </a>
+  <ul class="nav section-nav flex-column">
+  </ul>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -327,6 +358,26 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   目標
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   前提条件
+  </a>
+  <ul class="nav section-nav flex-column">
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -337,7 +388,29 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>はじめに<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
 <p>このサイトは2022年度の沖縄工業インターンで使用した講義資料です。
-以下、リンク毎に講義資料を掲載しています。</p>
+今回のインターンは3日間ありますが、1日目、2日目で達成したい目標は下記です。</p>
+<section id="id2">
+<h2>目標<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>簡単なプログラミングをする目的を与えられたときに以下を達成できる。</p>
+<ul>
+<li><p>プログラミングするための手順を説明することができる。</p></li>
+<li><p>Pythonで上記手順を書くことができる</p></li>
+</ul>
+</li>
+<li><p>オブジェクト指向という概念を講義資料を見ながら理解することができる。</p></li>
+<li><p>簡単なクラス設計を行うことができる。</p></li>
+<li><p>Webアプリケーションという概念を講義資料を見ながら理解することができる。</p></li>
+</ul>
+<p>また、前提条件として下記を理解していることとして講義を進めていきます。
+もし不安がある場合は相談してください。</p>
+</section>
+<section id="id3">
+<h2>前提条件<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Pythonを含むプログラミングの経験</p></li>
+</ul>
+<p>以下、リンク毎に講義資料を掲載しています。</p>
 <div class="toctree-wrapper compound">
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">1日目</span></p>
 <ul>
@@ -355,6 +428,7 @@ title="Print to PDF"
 <li class="toctree-l1"><a class="reference internal" href="web-application.html">7. Webアプリケーションとは</a></li>
 </ul>
 </div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">

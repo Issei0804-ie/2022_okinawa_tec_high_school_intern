@@ -462,7 +462,12 @@ title="Print to PDF"
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id6">
-   2.10. ループと関数について理解する。
+   2.10. ループについて理解する。
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id7">
+   2.11. 関数について理解する。
   </a>
  </li>
 </ul>
@@ -531,7 +536,12 @@ title="Print to PDF"
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id6">
-   2.10. ループと関数について理解する。
+   2.10. ループについて理解する。
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id7">
+   2.11. 関数について理解する。
   </a>
  </li>
 </ul>
@@ -557,10 +567,11 @@ title="Print to PDF"
 <li><p>変数について理解する。</p></li>
 <li><p>str型の変数の中身をprint文を使用して出力することができる。</p></li>
 <li><p>条件について理解する。</p></li>
-<li><p>ループと関数について理解する。</p></li>
+<li><p>ループについて理解する。</p></li>
+<li><p>関数について理解する。</p></li>
 </ul>
-<p>–</p>
 </section>
+<hr class="docutils" />
 <section id="id3">
 <h2><span class="section-number">2.2. </span>プログラミングの3ステップ<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
 <p>我々がプログラミングを行う際考えなければならないステップが3つある。
@@ -728,9 +739,6 @@ str型は文字列または文字が所持している型である。
 <section id="strprint">
 <h2><span class="section-number">2.8. </span>str型の変数の中身をprint文を使用して出力することができる。<a class="headerlink" href="#strprint" title="Permalink to this headline">#</a></h2>
 <p>次にprint文を使用して変数の中身を表示してみる。
-まず変数について説明する。
-一般的に変数とは値を格納できる箱であると説明されることが多いがわかりやすさを考慮し、変数が持つ機能について先に説明する。
-変数は何らかの値を保持することができる。そして変数には名前を付けることができる。
 例えば、”Pythonはプログラミング言語です”というstr型を持つ値に対してsentenceという名前を付けてみる。</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -756,10 +764,92 @@ str型は文字列または文字が所持している型である。
 </section>
 <section id="id5">
 <h2><span class="section-number">2.9. </span>条件について理解する。<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h2>
-<p>プログラミングを行う上でif文とfor文は外せない話である。まずif文について説明する。</p>
+<p>プログラミングを行う上でif文とfor文は外せない話である。まずif文について説明する。
+Pythonのif文の構文は以下の通りである。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">条件文</span><span class="p">:</span>
+    <span class="n">真の場合の処理</span>
+<span class="k">else</span><span class="p">:</span> 
+    <span class="n">偽の場合の処理</span>
+</pre></div>
+</div>
+<p>なお、else句については省略可能である。
+また、else-if句については以下のように記述できる。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">条件文1</span><span class="p">:</span>
+    <span class="n">条件文1が真の場合の処理</span>
+<span class="k">elif</span> <span class="n">条件文2</span><span class="p">:</span>
+    <span class="n">条件文2が真の場合の処理</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">条件文1</span><span class="p">,</span><span class="n">条件文2ともに偽だった場合の処理</span>
+</pre></div>
+</div>
+<p>では試しに、下記のコード中の”[MASK]”を穴埋めして “sub_valueは0より小さいです。” という文を出力してみよう。</p>
+<div class="cell tag_raises-exception tag_hide-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 下記は例である。</span>
+<span class="n">sum_value</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">2</span>
+<span class="k">if</span> <span class="n">sum_value</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;sum_value は3より大きいです。&quot;</span><span class="p">)</span>
+
+<span class="n">sub_value</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">-</span> <span class="mi">6</span>
+<span class="c1"># ここで sub_value が0より小さいか判定を行う。</span>
+<span class="k">if</span> <span class="p">[</span><span class="n">MASK</span><span class="p">]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;sub_valueは0より小さいです。&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;sub_valueは0以上です。&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sum_value は3より大きいです。
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span> <span class="p">[</span><span class="mi">10</span><span class="p">],</span> <span class="n">line</span> <span class="mi">8</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">sub_value</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">-</span> <span class="mi">6</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="c1"># ここで sub_value が0より小さいか判定を行う。</span>
+<span class="ne">----&gt; </span><span class="mi">8</span> <span class="k">if</span> <span class="p">[</span><span class="n">MASK</span><span class="p">]:</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span>     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;sub_valueは0より小さいです。&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="k">else</span><span class="p">:</span>
+
+<span class="ne">NameError</span>: name &#39;MASK&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="id6">
-<h2><span class="section-number">2.10. </span>ループと関数について理解する。<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">2.10. </span>ループについて理解する。<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h2>
+<p>次にループの話をする。Pythonでループを行う方法はfor文とwhile文を使う2つの方法がある。
+ここではfor文を用いたループについて説明する。
+Pythonのfor文の構文は以下である。</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># &quot;ループ&quot;という文字を10回出力する方法</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ループ&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ループ
+ループ
+ループ
+ループ
+ループ
+ループ
+ループ
+ループ
+ループ
+ループ
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="id7">
+<h2><span class="section-number">2.11. </span>関数について理解する。<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h2>
 </section>
 </section>
 
