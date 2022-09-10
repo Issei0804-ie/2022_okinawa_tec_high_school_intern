@@ -156,7 +156,7 @@ print(sentence)
 これでstr型の変数の中身をprint文を使用して出力することができた。
 
 ## 条件について理解する。
-プログラミングを行う上でif文とfor文は外せない話である。まずif文について説明する。
+まずif文について説明する。
 Pythonのif文の構文は以下の通りである。
 
 ```
@@ -212,3 +212,28 @@ for i in range(10):
 
 ```
 ## 関数について理解する。
+
+Pythonにおける関数の定義方法は下記である。
+
+```{code-cell}
+
+def add(a, b):
+  return a + b
+
+sum = add(2,3)
+print(sum)
+```
+
+また、型ヒントを使うと下記のように書き換えることができる。
+```{code-cell}
+
+def add(a: int, b :int) -> int:
+  return a + b
+
+sum = add(2,3)
+print(sum)
+```
+
+
+
+
