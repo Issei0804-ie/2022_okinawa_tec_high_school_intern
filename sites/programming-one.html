@@ -754,7 +754,7 @@ str型は文字列または文字が所持している型である。
 </section>
 <section id="id5">
 <h2><span class="section-number">1.9. </span>条件について理解する。<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h2>
-<p>プログラミングを行う上でif文とfor文は外せない話である。まずif文について説明する。
+<p>まずif文について説明する。
 Pythonのif文の構文は以下の通りである。</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">条件文</span><span class="p">:</span>
     <span class="n">真の場合の処理</span>
@@ -840,6 +840,40 @@ Pythonのfor文の構文は以下である。</p>
 </section>
 <section id="id7">
 <h2><span class="section-number">1.11. </span>関数について理解する。<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h2>
+<p>Pythonにおける関数の定義方法は下記である。</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+  <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+
+<span class="nb">sum</span> <span class="o">=</span> <span class="n">add</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5
+</pre></div>
+</div>
+</div>
+</div>
+<p>また、型ヒントを使うと下記のように書き換えることができる。</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">b</span> <span class="p">:</span><span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+  <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+
+<span class="nb">sum</span> <span class="o">=</span> <span class="n">add</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 </section>
 
