@@ -13,6 +13,5 @@ parts:
       numbered: true
       chapters:
       - file: sites/programming-review.md
-      - file: sites/class-design.md
       - file: sites/object-oriented.ipynb
       - file: sites/web-application.md
