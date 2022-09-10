@@ -4,10 +4,6 @@
 
 - Webアプリケーションでよく使われているプロトコルについて知る
 - HTTPについて知る
-- HTMLについて知る
-- CSSについて知る
-- JavaScriptについて知る
-- Databaseについて知る
 - PythonでWebアプリケーションを書いてみる
 
 
@@ -56,8 +52,22 @@ Webアプリケーションでは様々なプロトコルが使用される。�
   - 基本的にデータベースごとに異なる
   - 例えば MySQL の場合だと[こんな感じ](https://dev.mysql.com/doc/dev/mysql-server/latest/PAGE_PROTOCOL.html)
 
-## HTML について知る
 
-HTMLとはWebページを記述するためのデータ形式である。
-ここでは実際にHTMLを書いていくことによって理解していくこととする。
+## HTTPレスポンスステータスコード
 
+HTTPリクエストが正常に終了したか示すためにHTTPレスポンスステータスコードが用いられる。
+この[サイト](https://developer.mozilla.org/ja/docs/Web/HTTP/Status#%E6%83%85%E5%A0%B1%E3%83%AC%E3%82%B9%E3%83%9D%E3%83%B3%E3%82%B9)を参照して、いくつかのレスポンスステータスコードを見ていくこととする。
+
+では実際にステータスコードを確認してみよう。
+
+```
+# 200
+curl -o /dev/null -s -w "%{http_code}\n" https://ie.u-ryukyu.ac.jp
+
+# 404
+curl -o /dev/null -s -w "%{http_code}\n" https://ie.u-ryukyu.ac.jp/hogehoge  
+```
+
+## HTTPリクエストメソッド
+
+[参照](https://developer.mozilla.org/ja/docs/Web/HTTP/Methods)

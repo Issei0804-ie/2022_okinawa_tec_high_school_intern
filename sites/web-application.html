@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>7. Webアプリケーションとは &#8212; 沖縄工業インターン資料</title>
+    <title>6. Webアプリケーションとは &#8212; 沖縄工業インターン資料</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="6. オブジェクト指向の説明とその例題" href="object-oriented.html" />
+    <link rel="prev" title="5. オブジェクト指向の説明とその例題" href="object-oriented.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -114,18 +114,13 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="intro.html">
-   1. イントロダクション
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="programming-one.html">
-   2. プログラミング総合演習1
+   1. プログラミング総合演習1
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="programming-two.html">
-   3. プログラミング総合演習2
+   2. プログラミング総合演習2
   </a>
  </li>
 </ul>
@@ -137,22 +132,22 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="programming-review.html">
-   4. プログラミング総合演習の振り返り
+   3. プログラミング総合演習の振り返り
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="class-design.html">
-   5. クラス設計
+   4. クラス設計
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="object-oriented.html">
-   6. オブジェクト指向の説明とその例題
+   5. オブジェクト指向の説明とその例題
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   7. Webアプリケーションとは
+   6. Webアプリケーションとは
   </a>
  </li>
 </ul>
@@ -334,27 +329,32 @@ title="Print to PDF"
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id1">
-   7.1. この時間の目標
+   6.1. この時間の目標
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
-   7.2. Webアプリケーションの例題
+   6.2. Webアプリケーションの例題
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id3">
-   7.3. Webアプリケーションとは
+   6.3. Webアプリケーションとは
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id4">
-   7.4. Webアプリケーションでよく使われているプロトコルについて知る
+   6.4. Webアプリケーションでよく使われているプロトコルについて知る
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#html">
-   7.5. HTML について知る
+  <a class="reference internal nav-link" href="#http">
+   6.5. HTTPレスポンスステータスコード
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   6.6. HTTPリクエストメソッド
   </a>
  </li>
 </ul>
@@ -378,27 +378,32 @@ title="Print to PDF"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id1">
-   7.1. この時間の目標
+   6.1. この時間の目標
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
-   7.2. Webアプリケーションの例題
+   6.2. Webアプリケーションの例題
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id3">
-   7.3. Webアプリケーションとは
+   6.3. Webアプリケーションとは
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id4">
-   7.4. Webアプリケーションでよく使われているプロトコルについて知る
+   6.4. Webアプリケーションでよく使われているプロトコルについて知る
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#html">
-   7.5. HTML について知る
+  <a class="reference internal nav-link" href="#http">
+   6.5. HTTPレスポンスステータスコード
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   6.6. HTTPリクエストメソッド
   </a>
  </li>
 </ul>
@@ -412,21 +417,17 @@ title="Print to PDF"
               <div>
                 
   <section class="tex2jax_ignore mathjax_ignore" id="web">
-<h1><span class="section-number">7. </span>Webアプリケーションとは<a class="headerlink" href="#web" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">6. </span>Webアプリケーションとは<a class="headerlink" href="#web" title="Permalink to this headline">#</a></h1>
 <section id="id1">
-<h2><span class="section-number">7.1. </span>この時間の目標<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">6.1. </span>この時間の目標<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Webアプリケーションでよく使われているプロトコルについて知る</p></li>
 <li><p>HTTPについて知る</p></li>
-<li><p>HTMLについて知る</p></li>
-<li><p>CSSについて知る</p></li>
-<li><p>JavaScriptについて知る</p></li>
-<li><p>Databaseについて知る</p></li>
 <li><p>PythonでWebアプリケーションを書いてみる</p></li>
 </ul>
 </section>
 <section id="id2">
-<h2><span class="section-number">7.2. </span>Webアプリケーションの例題<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">6.2. </span>Webアプリケーションの例題<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
 <p>いきなり複雑な説明をされても理解が難しいため、いくつかWebアプリケーションを紹介する。</p>
 <ul class="simple">
 <li><p>Line</p></li>
@@ -450,7 +451,7 @@ title="Print to PDF"
 では、そもそもWebアプリケーションとは何を指すのだろうか。</p>
 </section>
 <section id="id3">
-<h2><span class="section-number">7.3. </span>Webアプリケーションとは<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">6.3. </span>Webアプリケーションとは<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
 <p>もともとWebアプリケーションとはWebブラウザを介してユーザーが入力を行い、用意したサーバーで処理しユーザーに結果を返すサービス、機能のことである。</p>
 <p><a class="reference external" href="http://ext-web.edu.sgu.ac.jp/HIKO/Seminar/14thStudent/Sotsuron/Paper_Takamori.pdf">http://ext-web.edu.sgu.ac.jp/HIKO/Seminar/14thStudent/Sotsuron/Paper_Takamori.pdf</a>
 <a class="reference external" href="https://www.wakhok.ac.jp/~tomoharu/web2004/text/index_c1.html#doc1_id59">https://www.wakhok.ac.jp/~tomoharu/web2004/text/index_c1.html#doc1_id59</a></p>
@@ -460,7 +461,7 @@ title="Print to PDF"
 <p>つまり、Webブラウザを使わずとも、HTTPを使用していればWebアプリケーションであると言える。</p>
 </section>
 <section id="id4">
-<h2><span class="section-number">7.4. </span>Webアプリケーションでよく使われているプロトコルについて知る<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">6.4. </span>Webアプリケーションでよく使われているプロトコルについて知る<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h2>
 <p>Webアプリケーションでは様々なプロトコルが使用される。ここではよくWebアプリケーションで使用されるプロトコルについて紹介する。</p>
 <ul class="simple">
 <li><p>HTTP</p>
@@ -484,10 +485,22 @@ title="Print to PDF"
 </li>
 </ul>
 </section>
-<section id="html">
-<h2><span class="section-number">7.5. </span>HTML について知る<a class="headerlink" href="#html" title="Permalink to this headline">#</a></h2>
-<p>HTMLとはWebページを記述するためのデータ形式である。
-ここでは実際にHTMLを書いていくことによって理解していくこととする。</p>
+<section id="http">
+<h2><span class="section-number">6.5. </span>HTTPレスポンスステータスコード<a class="headerlink" href="#http" title="Permalink to this headline">#</a></h2>
+<p>HTTPリクエストが正常に終了したか示すためにHTTPレスポンスステータスコードが用いられる。
+この<a class="reference external" href="https://developer.mozilla.org/ja/docs/Web/HTTP/Status#%E6%83%85%E5%A0%B1%E3%83%AC%E3%82%B9%E3%83%9D%E3%83%B3%E3%82%B9">サイト</a>を参照して、いくつかのレスポンスステータスコードを見ていくこととする。</p>
+<p>では実際にステータスコードを確認してみよう。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># 200</span>
+<span class="n">curl</span> <span class="o">-</span><span class="n">o</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">null</span> <span class="o">-</span><span class="n">s</span> <span class="o">-</span><span class="n">w</span> <span class="s2">&quot;%</span><span class="si">{http_code}</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">ie</span><span class="o">.</span><span class="n">u</span><span class="o">-</span><span class="n">ryukyu</span><span class="o">.</span><span class="n">ac</span><span class="o">.</span><span class="n">jp</span>
+
+<span class="c1"># 404</span>
+<span class="n">curl</span> <span class="o">-</span><span class="n">o</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">null</span> <span class="o">-</span><span class="n">s</span> <span class="o">-</span><span class="n">w</span> <span class="s2">&quot;%</span><span class="si">{http_code}</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">ie</span><span class="o">.</span><span class="n">u</span><span class="o">-</span><span class="n">ryukyu</span><span class="o">.</span><span class="n">ac</span><span class="o">.</span><span class="n">jp</span><span class="o">/</span><span class="n">hogehoge</span>  
+</pre></div>
+</div>
+</section>
+<section id="id5">
+<h2><span class="section-number">6.6. </span>HTTPリクエストメソッド<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h2>
+<p><a class="reference external" href="https://developer.mozilla.org/ja/docs/Web/HTTP/Methods">参照</a></p>
 </section>
 </section>
 
@@ -522,7 +535,7 @@ title="Print to PDF"
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">6. </span>オブジェクト指向の説明とその例題</p>
+            <p class="prev-next-title"><span class="section-number">5. </span>オブジェクト指向の説明とその例題</p>
         </div>
     </a>
 </div>
