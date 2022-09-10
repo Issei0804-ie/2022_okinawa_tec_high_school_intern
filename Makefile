@@ -3,3 +3,4 @@ build: to_ipy
 
 to_ipy:
 	jupytext --to notebook --execute sites/programming-one.md
+	jupytext --to notebook --execute sites/object-oriented.md

@@ -5,12 +5,16 @@ title: 沖縄工業インターン資料
 author: issei
 logo: logo.png
 
+exclude_patterns:
+- venv/*
+
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: force
   stderr_output: show
   allow_errors: True
+
 
 # Define the name of the latex output file for PDF builds
 latex:
