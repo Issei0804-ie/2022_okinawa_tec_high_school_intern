@@ -7,7 +7,6 @@ parts:
     - caption: 1日目
       numbered: true
       chapters:
-      - file: sites/intro.md
       - file: sites/programming-one.ipynb
       - file: sites/programming-two.md
     - caption: 2日目
