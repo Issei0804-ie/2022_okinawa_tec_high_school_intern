@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>5. オブジェクト指向の説明とその例題 &#8212; 沖縄工業インターン資料</title>
+    <title>4. オブジェクト指向の説明とその例題 &#8212; 沖縄工業インターン資料</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,8 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="6. Webアプリケーションとは" href="web-application.html" />
-    <link rel="prev" title="4. クラス設計" href="class-design.html" />
+    <link rel="next" title="5. Webアプリケーションとは" href="web-application.html" />
+    <link rel="prev" title="3. プログラミング総合演習の振り返り" href="programming-review.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -136,19 +136,14 @@ const thebe_selector_output = ".output, .cell_output"
    3. プログラミング総合演習の振り返り
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="class-design.html">
-   4. クラス設計
-  </a>
- </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   5. オブジェクト指向の説明とその例題
+   4. オブジェクト指向の説明とその例題
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="web-application.html">
-   6. Webアプリケーションとは
+   5. Webアプリケーションとは
   </a>
  </li>
 </ul>
@@ -412,23 +407,55 @@ title="Print to PDF"
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
-   5.1. 手続き型プログラミングと比較する
+   4.1. 手続き型プログラミングと比較する
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id3">
-   5.2. 貸出図書クラスの設計＆実装例
+   4.2. 貸出図書クラスの設計＆実装例
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id4">
-   5.3. 会員クラスの設計&amp;実装例
+   4.3. 会員クラスの設計&amp;実装例
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id5">
-   5.4. 貸出情報クラスの設計＆実装例
+   4.4. 貸出情報クラスの設計＆実装例
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   4.5. クラス設計の練習
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     4.5.1. 背景
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     4.5.2. 練習1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     4.5.3. 練習2
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     4.5.4. 練習3
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     4.5.5. 練習4
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -451,23 +478,55 @@ title="Print to PDF"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
-   5.1. 手続き型プログラミングと比較する
+   4.1. 手続き型プログラミングと比較する
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id3">
-   5.2. 貸出図書クラスの設計＆実装例
+   4.2. 貸出図書クラスの設計＆実装例
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id4">
-   5.3. 会員クラスの設計&amp;実装例
+   4.3. 会員クラスの設計&amp;実装例
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id5">
-   5.4. 貸出情報クラスの設計＆実装例
+   4.4. 貸出情報クラスの設計＆実装例
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   4.5. クラス設計の練習
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     4.5.1. 背景
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     4.5.2. 練習1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     4.5.3. 練習2
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     4.5.4. 練習3
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     4.5.5. 練習4
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -480,13 +539,13 @@ title="Print to PDF"
               <div>
                 
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1><span class="section-number">5. </span>オブジェクト指向の説明とその例題<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">4. </span>オブジェクト指向の説明とその例題<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
 <section id="id2">
-<h2><span class="section-number">5.1. </span>手続き型プログラミングと比較する<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.1. </span>手続き型プログラミングと比較する<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
 <p><a class="reference external" href="https://github.com/naltoma/java_intro2020/blob/master/ObjectOrientedProgramming.md">資料</a>。</p>
 </section>
 <section id="id3">
-<h2><span class="section-number">5.2. </span>貸出図書クラスの設計＆実装例<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.2. </span>貸出図書クラスの設計＆実装例<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>クラス名: RentalBook</p>
 <ul>
@@ -519,7 +578,7 @@ title="Print to PDF"
 </div>
 </section>
 <section id="id4">
-<h2><span class="section-number">5.3. </span>会員クラスの設計&amp;実装例<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.3. </span>会員クラスの設計&amp;実装例<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Member</p>
 <ul>
@@ -554,7 +613,7 @@ issei
 </div>
 </section>
 <section id="id5">
-<h2><span class="section-number">5.4. </span>貸出情報クラスの設計＆実装例<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.4. </span>貸出情報クラスの設計＆実装例<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>クラス名: RentalLog</p>
 <ul>
@@ -602,6 +661,66 @@ issei
 </div>
 </div>
 </section>
+<hr class="docutils" />
+<section id="id6">
+<h2><span class="section-number">4.5. </span>クラス設計の練習<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h2>
+<p>ここからは実際にクラス設計の練習を行う。
+いくつか問題を用意したのでクラス設計を行なってみよう。</p>
+<section id="id7">
+<h3><span class="section-number">4.5.1. </span>背景<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h3>
+<p>先程の貸し出し図書システムに新しく有料会員システムを導入することにした。
+有料会員と無料会員の違いは下記である。</p>
+<ul class="simple">
+<li><p>有料会員</p>
+<ul>
+<li><p>本を合計10冊まで借りることができる</p></li>
+<li><p>貸し出し期間は一冊につき10日である</p></li>
+</ul>
+</li>
+<li><p>無料会員</p>
+<ul>
+<li><p>本を合計5冊まで借りることができる</p></li>
+<li><p>貸し出し期間は一冊につき7日である</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id8">
+<h3><span class="section-number">4.5.2. </span>練習1<a class="headerlink" href="#id8" title="Permalink to this headline">#</a></h3>
+<p>Memberクラスに有料会員であるか無料会員であるかを判別するためのフィールド変数を追加しよう。
+実装する方法は色々と考えられるが自分が思った通りに書いて構わない。</p>
+</section>
+<section id="id9">
+<h3><span class="section-number">4.5.3. </span>練習2<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h3>
+<p>以下のMemberをコードで表現してみよう。</p>
+<ul class="simple">
+<li><p>名前: issei</p>
+<ul>
+<li><p>会員番号: 3</p></li>
+<li><p>会員: 有料会員</p></li>
+</ul>
+</li>
+<li><p>名前: カニ</p>
+<ul>
+<li><p>会員番号: 4</p></li>
+<li><p>会員: 無料会員</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id10">
+<h3><span class="section-number">4.5.4. </span>練習3<a class="headerlink" href="#id10" title="Permalink to this headline">#</a></h3>
+<p>一人当たりの本の貸し出し数を管理するための方法の一つとしてMemberクラスに何冊本を借りたか保存しておく方法がある。
+Memberクラスに何冊本を借りたか保存するコードを書いてみよう。
+また、借りた本の冊数は get_rentaled_book_num というメソッドを呼び出すと表示されるようにしよう。
+実装する方法は色々と考えられるが自分が思った通りに書いて構わない。</p>
+</section>
+<section id="id11">
+<h3><span class="section-number">4.5.5. </span>練習4<a class="headerlink" href="#id11" title="Permalink to this headline">#</a></h3>
+<p>今のままでは有料会員であっても貸し出し期間が7日になってしまう。
+コードを修正して有料会員だと貸し出し期間が10日になるようにしよう。</p>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -631,17 +750,17 @@ issei
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="class-design.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="programming-review.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">4. </span>クラス設計</p>
+            <p class="prev-next-title"><span class="section-number">3. </span>プログラミング総合演習の振り返り</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="web-application.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">6. </span>Webアプリケーションとは</p>
+        <p class="prev-next-title"><span class="section-number">5. </span>Webアプリケーションとは</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
