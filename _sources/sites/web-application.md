@@ -71,3 +71,9 @@ curl -o /dev/null -s -w "%{http_code}\n" https://ie.u-ryukyu.ac.jp/hogehoge
 ## HTTPリクエストメソッド
 
 [参照](https://developer.mozilla.org/ja/docs/Web/HTTP/Methods)
+
+## Webアプリケーションの例題
+
+ここではFlaskというフレームワークを使用したwebアプリのソースを見ていく。
+また、一部バグがあるのでそれを修正していく。
+[ソースコード先](https://github.com/Issei0804-ie/flask-sample)。
