@@ -28,9 +28,6 @@
 
 もともとWebアプリケーションとはWebブラウザを介してユーザーが入力を行い、用意したサーバーで処理しユーザーに結果を返すサービス、機能のことである。
 
-http://ext-web.edu.sgu.ac.jp/HIKO/Seminar/14thStudent/Sotsuron/Paper_Takamori.pdf
-https://www.wakhok.ac.jp/~tomoharu/web2004/text/index_c1.html#doc1_id59
-
 しかしながら、例えば Line はスマホアプリケーション上で行うツールであり、Webブラウザを介していると認識したことはないはずだ。
 このように、近年Webアプリケーションの定義が少し変わってきて、現在だと **HTTP** と呼ばれるプロトコルを用いて通信しているアプリケーション = Webアプリケーションという認識を行うことが多い。
 ちなみに、プロトコルとはコンピュータが通信を行うためのルールである。
