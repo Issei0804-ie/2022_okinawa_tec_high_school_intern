@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>1. プログラミング総合演習1 &#8212; 沖縄工業インターン資料</title>
+    <title>1. プログラミング総合演習1 &#8212; 高校生インターン資料</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -92,7 +92,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">沖縄工業インターン資料</h1>
+      <h1 class="site-logo" id="site-title">高校生インターン資料</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
@@ -450,6 +450,11 @@ title="Print to PDF"
    1.9. 関数について理解する。
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cast">
+   1.10. cast について
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -512,6 +517,11 @@ title="Print to PDF"
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id6">
    1.9. 関数について理解する。
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cast">
+   1.10. cast について
   </a>
  </li>
 </ul>
@@ -821,6 +831,96 @@ Pythonのfor文の構文は以下である。</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="cast">
+<h2><span class="section-number">1.10. </span>cast について<a class="headerlink" href="#cast" title="Permalink to this headline">#</a></h2>
+<p>下記のコードはエラーが出て実行することができない</p>
+<div class="cell tag_raises-exception tag_hide-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hoge&quot;</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span> <span class="p">[</span><span class="mi">13</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hoge&quot;</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="ne">TypeError</span>: can only concatenate str (not &quot;int&quot;) to str
+</pre></div>
+</div>
+</div>
+</div>
+<p>エラーには
+<code class="docutils literal notranslate"><span class="pre">TypeError:</span> <span class="pre">can</span> <span class="pre">only</span> <span class="pre">concatenate</span> <span class="pre">str</span> <span class="pre">(not</span> <span class="pre">&quot;int&quot;)</span> <span class="pre">to</span> <span class="pre">str</span></code> と書いてある。
+つまり、str型はstr型としか連結することができないと言っているわけだ。</p>
+<p>そのため、int型の 1 をstr型に変換する必要がある。</p>
+<p>ここではcastを行い型を変換する。
+例として、str型をint型に変換してみる。</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cast</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">cast</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;str&#39;&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<p>次にint型をstr型に変換してみる。</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cast</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="s2">&quot;1&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">cast</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;int&#39;&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<p>ここで注意したいのは、任意の文字列全てをintやfloatなどにcastできるわけではない。</p>
+<p>例えば、下記を実行するとエラーがでる。</p>
+<div class="cell tag_raises-exception tag_hide-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cast</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="s2">&quot;hoge&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span> <span class="p">[</span><span class="mi">16</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">cast</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="s2">&quot;hoge&quot;</span><span class="p">)</span>
+
+<span class="ne">ValueError</span>: invalid literal for int() with base 10: &#39;hoge&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>エラーは<code class="docutils literal notranslate"><span class="pre">ValreError:</span> <span class="pre">invalid</span> <span class="pre">literal</span> <span class="pre">for</span> <span class="pre">int()</span> <span class="pre">with</span> <span class="pre">base</span> <span class="pre">10:</span> <span class="pre">'hoge'</span></code> となり、そもそもValueErrorは引数に適切ではない値を受け渡した際に発生するエラーである。また、エラー文をよく読んでいくと、 どうやらintのcastには10進数の値を入れる必要があることもわかる。</p>
+<p>もし安全にstr型からint型に変換したいのであれば、isdeimal()を使用して変換が可能かどうか調べると良い。</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hoge</span> <span class="o">=</span> <span class="s2">&quot;11&quot;</span>
+
+<span class="n">is_int</span> <span class="o">=</span> <span class="n">hoge</span><span class="o">.</span><span class="n">isdecimal</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">is_int</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
