@@ -34,6 +34,7 @@ class RentalBook:
     self.title = title;
     self.barcode = barcode;
 
+  # メソッド
   def printSummary(self):
     print(f"title={self.title}, barcode={self.barcode}")
 
