@@ -213,6 +213,59 @@ sum = add(2,3)
 print(sum)
 ```
 
+## cast について
+
+下記のコードはエラーが出て実行することができない
 
 
+
+```{code-cell}
+---
+tags: [raises-exception, hide-output]
+---
+print("hoge" + 1)
+```
+
+エラーには
+`TypeError: can only concatenate str (not "int") to str` と書いてある。
+つまり、str型はstr型としか連結することができないと言っているわけだ。
+
+そのため、int型の 1 をstr型に変換する必要がある。
+
+ここではcastを行い型を変換する。
+例として、str型をint型に変換してみる。
+
+```{code-cell}
+cast = str(1)
+print(type(cast))
+```
+
+次にint型をstr型に変換してみる。
+
+```{code-cell}
+cast = int("1")
+print(type(cast))
+```
+
+ここで注意したいのは、任意の文字列全てをintやfloatなどにcastできるわけではない。
+
+例えば、下記を実行するとエラーがでる。
+
+```{code-cell}
+---
+tags: [raises-exception, hide-output]
+---
+cast = int("hoge")
+```
+
+エラーは`ValreError: invalid literal for int() with base 10: 'hoge'` となり、そもそもValueErrorは引数に適切ではない値を受け渡した際に発生するエラーである。また、エラー文をよく読んでいくと、 どうやらintのcastには10進数の値を入れる必要があることもわかる。
+
+もし安全にstr型からint型に変換したいのであれば、isdeimal()を使用して変換が可能かどうか調べると良い。
+
+```{code-cell}
+hoge = "11"
+
+is_int = hoge.isdecimal()
+print(is_int)
+```
 
